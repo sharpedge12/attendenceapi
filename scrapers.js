@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+require("dotenv").config();
 
 async function getTables(idd = '11156830561', passwd = '11156830561') {
     const browser = await puppeteer.launch({
